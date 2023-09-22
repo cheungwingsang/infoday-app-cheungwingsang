@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            NewsView().tabItem {
+                Image(systemName: "newspaper.fill")
+                Text("News")
+            }
             InfoView().tabItem {
                 Image(systemName: "info.circle.fill")
                 Text("Info")
